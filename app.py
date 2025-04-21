@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open("C:\\Users\\vishn\\OneDrive\\Desktop\\uber_rides.pkl", "rb"))
+model = pickle.load(open("uber_rides.pkl", "rb"))
 
 @app.route('/')
 def home():
